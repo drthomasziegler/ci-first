@@ -9,3 +9,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: Check syntax of html files
       run: npx prettier *.html
+runs:
+  using: 'node16'
+  main: 'github-action-runtime/index.js'
