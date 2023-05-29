@@ -2,8 +2,6 @@ name: CI
 on:
   push:
     branches: [ main ]
-runs:
-  using: 'node16'
 jobs:
   test:
     runs-on: ubuntu-latest
