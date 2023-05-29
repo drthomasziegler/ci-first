@@ -2,10 +2,12 @@ name: CI
 on:
   push:
     branches: [ main ]
+runs:
+  using: 'node16'
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v2
     - name: Check syntax of html files
       run: npx prettier *.html
